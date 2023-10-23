@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+   font-size: 40px;
+   text-shadow: 2px 2px 4px rgba(245, 245, 220, 60);
+   letter-spacing: 3px;
+   font-family: Helvetica;
+   font-weight: bold;
+   color: white;
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+h2 {
+   font-size: 15px;
+   text-shadow: 2px 2px 4px rgba(245, 245, 220, 60);
+   font-family: Helvetica;
+   letter-spacing: 3px;
+   color: white;
+   text-align: center;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   
+}
