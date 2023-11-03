@@ -1,6 +1,6 @@
 // CCLab Mini Project - 9.R Particles Template
 
-let NUM_OF_PARTICLES = 3; // Decide the initial number of particles.
+let NUM_OF_PARTICLES = 10; // Decide the initial number of particles.
 
 let particles = [];
 
@@ -35,7 +35,9 @@ class Particle {
   }
   // methods (functions): particle's behaviors
   update() {
-    // (add) 
+    this.x += random(-10,10);
+    this.y += random(-10,10);
+
   }
   display() {
     // particle's appearance
