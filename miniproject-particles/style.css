@@ -1,0 +1,26 @@
+html, body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+   margin: 0;
+   background-color:black;
+}
+canvas {
+  display: block;
+}
+
+h1 {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 40px;
+  color: pink;
+  text-align: center;
+}
+
+p {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 24px;
+  color: pink;
+  text-align: center;
+}
