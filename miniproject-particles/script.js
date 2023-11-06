@@ -2,7 +2,7 @@ let hearts = [];
 
 function setup() {
   let canvas = createCanvas(600,600);
-  canvas.parent("canvasWrapper")
+ canvas.parent("canvasWrapper")
 }
 
 function draw() {
@@ -31,19 +31,20 @@ class HeartParticles {
     this.y = y;
     this.velX = random(-3,3);
     this.velY = random(-3,3);
-    this.acc = 0.01;
+   this.acc = 0.1;
     this.size = random(5, 40);
     this.color = color(random(100,255), 0, random(0,50));
   }
 
   update() {
-    this.vel += this.acc;
+   this.velY += this.acc;
     this.x += this.velX
     this.y += this.velY
     
     if (this.x < 0 || this.x > width){
-  this.vel *= -1
+  this.velX *= -1
   }
+   
      }
 
   display(){
@@ -53,7 +54,7 @@ class HeartParticles {
    beginShape();
   vertex(this.x, this.y);
   bezierVertex(this.x - this.size / 2, this.y - this.size / 2, this.x - this.size, this.y + this.size / 3, this.x, this.y + this.size);
-  bezierVertex(this.x + this.size, this.y + this.size / 3, this.x + this.size / 2, this.y - this.size / 2, this.x, this.y);
+ bezierVertex(this.x + this.size, this.y + this.size / 3, this.x + this.size / 2, this.y - this.size / 2, this.x, this.y);
   endShape(CLOSE);  
 }
 }
