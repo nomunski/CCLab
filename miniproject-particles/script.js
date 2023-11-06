@@ -17,8 +17,8 @@ function draw() {
     p.update();
     p.display();
     
-  if (hearts.length >= 247){
-    hearts.splice(0, hearts.length - 247);
+  if (hearts.length >= 200){
+    hearts.splice(0, hearts.length - 200);
   }
   }
   
