@@ -14,7 +14,7 @@ function draw() {
 function getText() {
   inpt = select('#textInput');
   let b = inpt.value();
-  let i = floor(random(1,6));
+  let i = floor(random(1,5));
   i++;  
   console.log(b);
   let newLocation = 'pattern'+ i +'.html?answer='+ b;

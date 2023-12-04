@@ -76,3 +76,7 @@ function mousePressed() {
   isMousePressed = !isMousePressed;
   redraw();
 }
+
+function captureCanvas() {
+  saveCanvas('myconcretepoetry', 'png');
+}

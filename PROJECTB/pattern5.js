@@ -46,3 +46,7 @@ function draw() {
 function mousePressed() {
   isMousePressed = !isMousePressed;
 }
+
+function captureCanvas() {
+  saveCanvas('myconcretepoetry', 'png');
+}

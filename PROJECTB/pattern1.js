@@ -8,6 +8,10 @@ function setup() {
 
   let params = getURLParams();
   myTxt = params.answer;
+
+  // downloadButton = createButton('save');
+  // downloadButton.position(600, height + 80);
+  // downloadButton.mousePressed(captureCanvas);
 }
 
 function draw() {
@@ -32,7 +36,6 @@ class Pattern {
   }
 
   update() {
-    // Add update logic if needed
   }
 
   display() {
@@ -44,4 +47,8 @@ class Pattern {
     text(myTxt.replace(/%20/g, " "), 0, 0);
     pop();
   }
+}
+
+function captureCanvas() {
+  saveCanvas('myconcretepoetry', 'png');
 }

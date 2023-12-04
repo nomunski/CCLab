@@ -72,3 +72,6 @@ class Text{
   }
 }
 
+function captureCanvas() {
+  saveCanvas('myconcretepoetry', 'png');
+}

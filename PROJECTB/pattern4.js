@@ -2,7 +2,7 @@ let myTxt = 'hello';
 let patterns = [];
 let generateInterval;
 let generatedCount = 0;
-const maxGenerations = 200;
+const maxGenerations = 100;
 
 function setup() {
   let cvs = createCanvas(1200, 600);
@@ -76,4 +76,8 @@ class Pattern {
     text(this.text, 0, 0);
     pop();
   }
+}
+
+function captureCanvas() {
+  saveCanvas('myconcretepoetry', 'png');
 }
