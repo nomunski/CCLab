@@ -27,7 +27,7 @@ class Pattern {
   constructor() {
     this.xPos = random(width);
     this.yPos = random(height);
-    this.textSize = random(1, 10);
+    this.textSize = random(1, 20);
     this.rotation = radians(random(0, 180));
   }
 
